@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug ExampleBot",
+            "program": "${workspaceFolder}/.build/debug/ExampleBot",
+            "args": [],
+            "cwd": "${workspaceFolder:velvet}",
+            "preLaunchTask": "swift: Build Debug ExampleBot"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release ExampleBot",
+            "program": "${workspaceFolder}/.build/release/ExampleBot",
+            "args": [],
+            "cwd": "${workspaceFolder:velvet}",
+            "preLaunchTask": "swift: Build Release ExampleBot"
+        }
+    ]
+}

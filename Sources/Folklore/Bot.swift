@@ -7,8 +7,8 @@ open class Bot {
   private var commandRegistry: FolkloreCommandRegistry?
   private var usingFramework: Bool
   private var logger: Logger
-  var me: TelegramUser = TelegramUser(dummy: true)
-  var request: TelegramRequester
+  public var me: TelegramUser = TelegramUser(dummy: true)
+  public var request: TelegramRequester
   
   public init(
     token: String,

@@ -1,4 +1,4 @@
-struct TelegramUser : Codable {
+public struct TelegramUser : Codable {
   var id: Double
   var isBot: Bool
   var firstName: String

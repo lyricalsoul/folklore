@@ -4,7 +4,7 @@ import AsyncHTTPClient
 import NIO
 import NIOFoundationCompat
 
-class TelegramRequester {
+public class TelegramRequester {
   private var token: String
   var apiURL: String = "http://api.telegram.org"
   var logger: Logger
@@ -26,7 +26,7 @@ class TelegramRequester {
     try? self.httpClient.syncShutdown()
   }
   
-  func set(apiURL: String) {
+  public func set(apiURL: String) {
     self.apiURL = apiURL
   }
   
